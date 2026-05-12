@@ -19,6 +19,19 @@
   box-sizing: border-box;
 }
 
+html,
+body,
+.container,
+.main-layout,
+.content-area,
+.article-content,
+.sidebar,
+.explanation-panel,
+.form-card,
+.result-card {
+  min-width: 0;
+}
+
 body {
   font-family: "Noto Sans", "Microsoft YaHei", sans-serif;
   background: #f4f7fb;
@@ -526,12 +539,137 @@ body {
 }
 
 @media (max-width: 1080px) {
-  .calculator-grid {
+  .header-content {
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .header h1 {
+    font-size: 22px;
+  }
+
+  .main-layout {
     grid-template-columns: 1fr;
   }
 
+  .sidebar {
+    border-right: none;
+    border-bottom: 3px solid var(--primary-green);
+    max-height: none;
+    padding: 16px 0 12px;
+  }
+
+  .content-area {
+    grid-template-columns: 1fr;
+    max-height: none;
+  }
+
+  .article-content {
+    padding: 24px 20px;
+    max-height: none;
+  }
+
+  .explanation-panel {
+    border-left: none;
+    border-top: 3px solid var(--primary-yellow);
+    max-height: none;
+  }
+
+  .explanation-tabs {
+    flex-wrap: wrap;
+  }
+
+  .tab-btn {
+    flex: 1 1 50%;
+  }
+
+  .calculator-grid,
   .field-group-row {
     grid-template-columns: 1fr;
+  }
+
+  .field-row {
+    flex-wrap: wrap;
+  }
+
+  .field-label {
+    min-width: 0;
+    width: 100%;
+    margin-bottom: 8px;
+  }
+
+  .field-input,
+  .textarea-input,
+  .amount-input-group {
+    width: 100%;
+  }
+
+  .amount-input-group {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .calculator-actions,
+  .result-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .calculator-actions button,
+  .result-actions button,
+  .estimate-btn {
+    width: 100%;
+  }
+
+  .estimate-btn {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 720px) {
+  .header {
+    padding: 16px 12px;
+  }
+
+  .header-content {
+    gap: 12px;
+  }
+
+  .header h1 {
+    font-size: 20px;
+  }
+
+  .sidebar,
+  .explanation-panel {
+    padding: 12px 0;
+  }
+
+  .article-content {
+    padding: 18px 16px;
+  }
+
+  .tab-btn {
+    font-size: 14px;
+    padding: 10px 8px;
+  }
+
+  .article-text p,
+  .article-text li {
+    font-size: 17px;
+  }
+
+  .field-row {
+    gap: 10px;
+  }
+
+  .calculator-grid,
+  .content-area {
+    gap: 16px;
+  }
+
+  .result-card,
+  .form-card {
+    padding: 20px;
   }
 }
 
