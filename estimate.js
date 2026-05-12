@@ -303,3 +303,16 @@ formulaModal.addEventListener("click", (e) => {
     closeModal();
   }
 });
+
+// 商品條文展開/收起
+const productInfo = document.getElementById("productInfo");
+const toggleProductBtn = document.getElementById("toggleProductBtn");
+
+if (toggleProductBtn) {
+  toggleProductBtn.addEventListener("click", () => {
+    productInfo.classList.toggle("expanded");
+    toggleProductBtn.textContent = productInfo.classList.contains("expanded")
+      ? "收起條文"
+      : "展開全部條文";
+  });
+}
