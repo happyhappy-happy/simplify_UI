@@ -765,7 +765,7 @@ textarea,
 
   .field-label {
     white-space: nowrap;   /* 避免文字斷行 */
-    margin-right: 8px;
+    margin-right: 1px;
     width: auto;           /* 不要強制佔滿整列 */
   }
 
