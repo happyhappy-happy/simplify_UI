@@ -873,19 +873,22 @@ textarea,
 @media (max-width: 899px) {
   .content-area {
     grid-template-columns: 1fr;
+    min-height: calc(100vh - 160px);
   }
 
   .explanation-panel {
     width: 100%;
     border-left: none;
     border-top: 4px solid var(--primary-yellow);
-    max-height: 280px;
+    max-height: none;
+    min-height: 45vh;
     order: 2;
   }
 
   .article-content {
     order: 1;
     max-height: none;
+    min-height: 45vh;
   }
 
   .nav-item {
@@ -960,8 +963,9 @@ textarea,
 
   .article-content {
     padding: 16px;
-    max-height: 60vh;
-    overflow-y: auto;
+    max-height: none;
+    min-height: 45vh;
+    overflow-y: visible;
   }
 
   .section h2 {
@@ -979,7 +983,8 @@ textarea,
   }
 
   .explanation-panel {
-    max-height: 35vh;
+    max-height: none;
+    min-height: 45vh;
   }
 
   .explanation-tabs {
@@ -1061,7 +1066,8 @@ textarea,
 
   .article-content {
     padding: 12px;
-    max-height: 50vh;
+    max-height: none;
+    min-height: 44vh;
   }
 
   .section h2 {
@@ -1090,7 +1096,8 @@ textarea,
 
   .explanation-panel {
     width: 100%;
-    max-height: 40vh;
+    max-height: none;
+    min-height: 44vh;
   }
 
   .explanation-tabs {
@@ -1178,7 +1185,13 @@ textarea,
 
   .article-content {
     padding: 10px;
-    max-height: 45vh;
+    max-height: none;
+    min-height: 42vh;
+  }
+
+  .explanation-panel {
+    max-height: none;
+    min-height: 42vh;
   }
 
   .section h2 {
