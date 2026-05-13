@@ -1307,7 +1307,6 @@ textarea,
 
 /* 小屏與平板文字最小 14px */
 @media (max-width: 899px) {
-  .header h1,
   .sidebar-title,
   .nav-item,
   .nav-item .section-num,
