@@ -739,6 +739,21 @@ textarea,
   .btn-toggle {
     width: 100%;
   }
+
+  .article-text {
+    max-height: 130px;
+    overflow-y: auto;
+    padding-right: 0.5rem;
+  }
+
+  .article-text::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .article-text::-webkit-scrollbar-thumb {
+    background: rgba(33, 104, 243, 0.2);
+    border-radius: 999px;
+  }
 }
 
 @media (max-width: 720px) {
@@ -847,9 +862,9 @@ textarea,
   font-size: 26px;
   font-weight: 600;
   color: var(--text-dark);
-  margin: 0 0 12px;
-  padding-bottom: 8px;
-  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid var(--border-color);
 }
 
 .article-text {
@@ -859,7 +874,7 @@ textarea,
 }
 
 .article-text p {
-  margin: 0 0 16px;
+  margin-bottom: 16px;
   text-align: justify;
   font-size: 20px;
 }
@@ -1128,13 +1143,9 @@ textarea,
 
   .section h2 {
     font-size: 17px;
-    margin: 0 0 10px;
-    padding-bottom: 6px;
-    border-bottom: 1px solid var(--border-color);
   }
 
   .article-text p {
-    margin: 0 0 15px;
     font-size: 15px;
   }
 }
@@ -1262,13 +1273,9 @@ textarea,
 
   .section h2 {
     font-size: 18px;
-    margin: 0 0 8px;
-    padding-bottom: 6px;
-    border-bottom: 1px solid var(--border-color);
   }
 
   .article-text p {
-    margin: 0 0 13px;
     font-size: 13px;
   }
 
@@ -1333,9 +1340,7 @@ textarea,
 
   .section h2 {
     font-size: 20px;
-    margin: 0 0 10px;
-    padding-bottom: 6px;
-    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 12px;
   }
 
   .calculator-header h2 {
@@ -1347,8 +1352,8 @@ textarea,
   }
 
   .article-text p {
-    margin: 0 0 12px;
     font-size: 13px;
+    margin-bottom: 12px;
   }
 
   .explanation-panel {
@@ -1439,9 +1444,7 @@ textarea,
 
   .section h2 {
     font-size: 18px;
-    margin: 0 0 8px;
-    padding-bottom: 6px;
-    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 10px;
   }
 
   .calculator-header h2 {
@@ -1453,8 +1456,8 @@ textarea,
   }
 
   .article-text p {
-    margin: 0 0 10px;
     font-size: 12px;
+    margin-bottom: 10px;
   }
 
   .article-text ul,
@@ -1578,14 +1581,12 @@ textarea,
 
   .section h2 {
     font-size: 13px;
-    margin: 0 0 6px;
-    padding-bottom: 4px;
-    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 8px;
   }
 
   .article-text p {
-    margin: 0 0 8px;
     font-size: 11px;
+    margin-bottom: 8px;
   }
 
   .explanation-tabs {
@@ -1638,9 +1639,6 @@ textarea,
 
   .section h2 {
     font-size: 12px;
-    margin: 0 0 6px;
-    padding-bottom: 4px;
-    border-bottom: 1px solid var(--border-color);
   }
 
   .article-text p {
