@@ -344,11 +344,15 @@ textarea,
   }
 
   .explanation-tabs {
-    flex-wrap: wrap;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 8px;
   }
 
   .tab-btn {
-    flex: 1 1 50%;
+    flex: 1 0 auto;
+    min-width: 120px;
     font-size: 13px;
     padding: 10px 6px;
   }
@@ -437,11 +441,15 @@ textarea,
   }
 
   .explanation-tabs {
-    flex-wrap: wrap;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 8px;
   }
 
   .tab-btn {
-    flex: 1 1 50%;
+    flex: 1 0 auto;
+    min-width: 110px;
   }
 
   .calculator-grid{
@@ -879,12 +887,15 @@ textarea,
   }
 
   .explanation-tabs {
-    flex-wrap: wrap;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 8px;
   }
 
   .tab-btn {
-    flex: 1 1 auto;
-    min-width: 80px;
+    flex: 1 0 auto;
+    min-width: 100px;
     font-size: 13px;
     padding: 10px 8px;
   }
@@ -931,12 +942,15 @@ textarea,
   }
 
   .explanation-tabs {
-    flex-wrap: wrap;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 8px;
   }
 
   .tab-btn {
-    flex: 1 1 50%;
-    min-width: auto;
+    flex: 1 0 auto;
+    min-width: 85px;
     font-size: 10px;
     padding: 8px 6px;
   }
@@ -1008,13 +1022,15 @@ textarea,
   }
 
   .explanation-tabs {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 8px;
   }
 
   .tab-btn {
-    flex: 1;
-    min-width: auto;
+    flex: 1 0 auto;
+    min-width: 85px;
     font-size: 10px;
     padding: 8px 6px;
   }
@@ -1119,12 +1135,15 @@ textarea,
   }
 
   .explanation-tabs {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 8px;
   }
 
   .tab-btn {
+    flex: 1 0 auto;
+    min-width: 80px;
     font-size: 9px;
     padding: 6px 4px;
     border-radius: 0;
@@ -1217,12 +1236,16 @@ textarea,
   }
 
   .explanation-tabs {
-    grid-template-columns: 1fr;
-    max-height: 150px;
-    overflow-y: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 8px;
+    max-height: none;
   }
 
   .tab-btn {
+    flex: 1 0 auto;
+    min-width: 75px;
     font-size: 8px;
     padding: 6px;
   }
