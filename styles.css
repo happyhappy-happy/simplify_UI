@@ -739,21 +739,6 @@ textarea,
   .btn-toggle {
     width: 100%;
   }
-
-  .article-text {
-    max-height: 130px;
-    overflow-y: auto;
-    padding-right: 0.5rem;
-  }
-
-  .article-text::-webkit-scrollbar {
-    width: 8px;
-  }
-
-  .article-text::-webkit-scrollbar-thumb {
-    background: rgba(33, 104, 243, 0.2);
-    border-radius: 999px;
-  }
 }
 
 @media (max-width: 720px) {
