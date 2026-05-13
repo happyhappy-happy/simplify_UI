@@ -775,7 +775,7 @@ textarea,
   .amount-unit {
     flex: 1;               /* 輸入框自動縮放 */
     min-width: 0;
-    width: 100%;           /* 不要強制 100% */
+    width: 100%;           
   }
 
   .amount-input-group {
