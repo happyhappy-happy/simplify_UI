@@ -263,6 +263,7 @@ textarea,
   .header-content {
     flex-wrap: wrap;
     align-items: flex-start;
+    max-width: none;
   }
 
   .header h1 {
@@ -301,7 +302,7 @@ textarea,
   }
 
   .content-area {
-    grid-template-columns: 1fr 400px;
+    grid-template-columns: 1fr;
     gap: 0;
     max-height: calc(100vh - 120px);
   }
@@ -312,8 +313,8 @@ textarea,
   }
 
   .explanation-panel {
-    border-left: 4px solid var(--primary-yellow);
-    border-top: none;
+    border-left: none;
+    border-top: 4px solid var(--primary-yellow);
     max-height: calc(100vh - 120px);
   }
 
@@ -360,6 +361,15 @@ textarea,
     font-size: 14px;
     margin-bottom: 4px;
   }
+
+  .calculator-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .calculator-grid.table-layout {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* 手機 (max-width: 768px) */
@@ -367,6 +377,7 @@ textarea,
   .header-content {
     flex-wrap: wrap;
     align-items: flex-start;
+    max-width: none;
   }
 
   .header h1 {
