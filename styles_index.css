@@ -180,6 +180,7 @@ textarea,
   grid-template-columns: 1fr 580px;
   gap: 0;
   background: white;
+  min-height: 0;
 }
 
 .content-area.single-column {
@@ -194,6 +195,25 @@ textarea,
   overflow-y: auto;
   max-height: calc(100vh - 120px);
   width: 100%;
+  min-height: 0;
+}
+
+.explanation-panel {
+  width: 100%;
+  background: #fffbeb;
+  border-left: 4px solid var(--primary-yellow);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  max-height: calc(100vh - 120px);
+  min-height: 0;
+}
+
+.explanation-content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 18px;
+  min-height: 0;
 }
 
 .calculator-content {
