@@ -30,12 +30,6 @@ body,
   min-width: 0;
 }
 
-html,
-body {
-  height: 100%;
-  overflow: hidden;
-}
-
 body {
   font-family: "Noto Sans", "Microsoft YaHei", sans-serif;
   background: #f4f7fb;
@@ -44,10 +38,8 @@ body {
 
 .container {
   width: 100%;
-  min-height: 100%;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
 }
 
 input,
@@ -114,9 +106,6 @@ textarea,
   gap: 0;
   flex: 1;
   max-width: 100%;
-  height: calc(100vh - 120px);
-  min-height: calc(100vh - 120px);
-  overflow: hidden;
 }
 
 .main-layout.single-column {
@@ -191,10 +180,6 @@ textarea,
   grid-template-columns: 1fr 580px;
   gap: 0;
   background: white;
-  height: 100%;
-  min-height: 0;
-  overflow: hidden;
-  grid-auto-rows: 1fr;
 }
 
 .content-area.single-column {
@@ -207,8 +192,7 @@ textarea,
   flex: 1;
   padding: 32px;
   overflow-y: auto;
-  height: 100%;
-  min-height: 0;
+  max-height: calc(100vh - 120px);
   width: 100%;
 }
 
@@ -546,8 +530,7 @@ textarea,
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  height: 100%;
-  min-height: 0;
+  max-height: calc(100vh - 120px);
 }
 
 .explanation-tabs {
@@ -890,22 +873,19 @@ textarea,
 @media (max-width: 899px) {
   .content-area {
     grid-template-columns: 1fr;
-    min-height: calc(100vh - 160px);
   }
 
   .explanation-panel {
     width: 100%;
     border-left: none;
     border-top: 4px solid var(--primary-yellow);
-    max-height: none;
-    min-height: 45vh;
+    max-height: 280px;
     order: 2;
   }
 
   .article-content {
     order: 1;
     max-height: none;
-    min-height: 45vh;
   }
 
   .nav-item {
@@ -980,9 +960,8 @@ textarea,
 
   .article-content {
     padding: 16px;
-    max-height: none;
-    min-height: 45vh;
-    overflow-y: visible;
+    max-height: 60vh;
+    overflow-y: auto;
   }
 
   .section h2 {
@@ -1000,8 +979,7 @@ textarea,
   }
 
   .explanation-panel {
-    max-height: none;
-    min-height: 45vh;
+    max-height: 35vh;
   }
 
   .explanation-tabs {
@@ -1083,8 +1061,7 @@ textarea,
 
   .article-content {
     padding: 12px;
-    max-height: none;
-    min-height: 44vh;
+    max-height: 50vh;
   }
 
   .section h2 {
@@ -1113,8 +1090,7 @@ textarea,
 
   .explanation-panel {
     width: 100%;
-    max-height: none;
-    min-height: 44vh;
+    max-height: 40vh;
   }
 
   .explanation-tabs {
@@ -1202,13 +1178,7 @@ textarea,
 
   .article-content {
     padding: 10px;
-    max-height: none;
-    min-height: 42vh;
-  }
-
-  .explanation-panel {
-    max-height: none;
-    min-height: 42vh;
+    max-height: 45vh;
   }
 
   .section h2 {
