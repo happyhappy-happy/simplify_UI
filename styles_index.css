@@ -324,18 +324,23 @@ textarea,
   .content-area {
     grid-template-columns: 1fr;
     gap: 0;
-    max-height: calc(100vh - 120px);
+    max-height: none;
   }
 
   .article-content {
     padding: 20px 16px;
-    max-height: calc(100vh - 120px);
+    max-height: none;
   }
 
   .explanation-panel {
     border-left: none;
     border-top: 4px solid var(--primary-yellow);
-    max-height: calc(100vh - 120px);
+    max-height: none;
+    overflow: visible;
+  }
+
+  .explanation-content {
+    overflow-y: visible;
   }
 
   .explanation-tabs {
@@ -1274,5 +1279,23 @@ textarea,
   .tab-btn {
     font-size: 7px;
     padding: 4px;
+  }
+}
+
+/* 強制說明區完整呈現，不要內部捲動 */
+@media (max-width: 1199px) {
+  .content-area,
+  .article-content,
+  .explanation-panel,
+  .explanation-content {
+    max-height: none !important;
+    overflow: visible !important;
+    height: auto !important;
+  }
+  .explanation-panel {
+    min-height: 0 !important;
+  }
+  .explanation-content {
+    overflow-y: visible !important;
   }
 }
