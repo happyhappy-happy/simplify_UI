@@ -287,7 +287,7 @@ textarea,
   }
 
   .header h1 {
-    font-size: 22px;
+    font-size: 24px;
   }
 
   .main-layout {
@@ -304,7 +304,7 @@ textarea,
   }
 
   .sidebar-title {
-    font-size: 15px;
+    font-size: 16px;
     padding: 10px 12px;
   }
 
@@ -314,11 +314,11 @@ textarea,
   }
 
   .nav-item .section-num {
-    font-size: 14px;
+    font-size: 15px;
   }
 
   .nav-item .section-title {
-    font-size: 13px;
+    font-size: 15px;
   }
 
   .content-area {
@@ -353,41 +353,41 @@ textarea,
   .tab-btn {
     flex: 1 0 auto;
     min-width: 120px;
-    font-size: 13px;
+    font-size: 15px;
     padding: 10px 6px;
   }
 
   .section h2 {
-    font-size: 20px;
+    font-size: 22px;
     margin-bottom: 12px;
   }
 
   .article-text {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .article-text p {
-    font-size: 16px;
+    font-size: 18px;
     margin-bottom: 12px;
   }
 
   .article-text li {
-    font-size: 16px;
+    font-size: 18px;
     margin-bottom: 6px;
   }
 
   .explanation-box h3 {
-    font-size: 16px;
+    font-size: 18px;
     margin-bottom: 10px;
   }
 
   .explanation-box p {
-    font-size: 14px;
+    font-size: 16px;
     margin-bottom: 10px;
   }
 
   .highlight-box li {
-    font-size: 14px;
+    font-size: 16px;
     margin-bottom: 4px;
   }
 
@@ -472,7 +472,7 @@ textarea,
   }
 
   .section h2 {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .article-content {
@@ -480,31 +480,31 @@ textarea,
   }
 
   .article-text {
-    font-size: 15px;
+    font-size: 16px;
   }
 
   .article-text p,
   .article-text li {
-    font-size: 15px;
+    font-size: 16px;
   }
 
   .tab-btn {
-    font-size: 12px;
+    font-size: 14px;
     padding: 8px 6px;
   }
 
   .explanation-box h3 {
-    font-size: 14px;
+    font-size: 16px;
     margin-bottom: 8px;
   }
 
   .explanation-box p {
-    font-size: 12px;
+    font-size: 14px;
     margin-bottom: 8px;
   }
 
   .highlight-box li {
-    font-size: 12px;
+    font-size: 14px;
     margin-bottom: 3px;
   }
 }
