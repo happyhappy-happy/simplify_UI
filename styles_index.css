@@ -34,12 +34,17 @@ body {
   font-family: "Noto Sans", "Microsoft YaHei", sans-serif;
   background: #f4f7fb;
   color: var(--text-dark);
+  min-width: 0;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .container {
   width: 100%;
   display: flex;
   flex-direction: column;
+  min-width: 0;
+  max-width: 100%;
 }
 
 input,
@@ -47,7 +52,8 @@ select,
 textarea,
 .button,
 .tab-btn,
-.article-text {
+.article-text,
+.nav-item {
   word-break: break-word;
   overflow-wrap: anywhere;
 }
@@ -180,6 +186,9 @@ textarea,
   grid-template-columns: 1fr 580px;
   gap: 0;
   background: white;
+  min-width: 0;
+  width: 100%;
+  max-width: 100%;
 }
 
 .content-area.single-column {
@@ -979,7 +988,7 @@ textarea,
   }
 
   .explanation-panel {
-    max-height: 35vh;
+    max-height: none;
   }
 
   .explanation-tabs {
@@ -1061,7 +1070,8 @@ textarea,
 
   .article-content {
     padding: 12px;
-    max-height: 50vh;
+    max-height: none;
+    overflow-y: visible;
   }
 
   .section h2 {
@@ -1090,7 +1100,7 @@ textarea,
 
   .explanation-panel {
     width: 100%;
-    max-height: 40vh;
+    max-height: none;
   }
 
   .explanation-tabs {
@@ -1178,7 +1188,8 @@ textarea,
 
   .article-content {
     padding: 10px;
-    max-height: 45vh;
+    max-height: none;
+    overflow-y: visible;
   }
 
   .section h2 {
@@ -1193,8 +1204,8 @@ textarea,
 
   .explanation-tabs {
     grid-template-columns: 1fr;
-    max-height: 150px;
-    overflow-y: auto;
+    max-height: none;
+    overflow-y: visible;
   }
 
   .tab-btn {
