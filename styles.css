@@ -862,9 +862,9 @@ textarea,
   font-size: 26px;
   font-weight: 600;
   color: var(--text-dark);
-  margin: 0 0 8px;
-  padding-bottom: 6px;
-  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid var(--border-color);
 }
 
 .article-text {
@@ -1273,9 +1273,6 @@ textarea,
 
   .section h2 {
     font-size: 18px;
-    margin: 0 0 8px;
-    padding-bottom: 5px;
-    border-bottom: 1px solid var(--border-color);
   }
 
   .article-text p {
@@ -1343,9 +1340,7 @@ textarea,
 
   .section h2 {
     font-size: 20px;
-    margin: 0 0 8px;
-    padding-bottom: 5px;
-    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 12px;
   }
 
   .calculator-header h2 {
@@ -1449,9 +1444,7 @@ textarea,
 
   .section h2 {
     font-size: 18px;
-    margin: 0 0 8px;
-    padding-bottom: 5px;
-    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 10px;
   }
 
   .calculator-header h2 {
@@ -1588,9 +1581,7 @@ textarea,
 
   .section h2 {
     font-size: 13px;
-    margin: 0 0 6px;
-    padding-bottom: 4px;
-    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 8px;
   }
 
   .article-text p {
@@ -1648,9 +1639,6 @@ textarea,
 
   .section h2 {
     font-size: 12px;
-    margin: 0 0 6px;
-    padding-bottom: 4px;
-    border-bottom: 1px solid var(--border-color);
   }
 
   .article-text p {
