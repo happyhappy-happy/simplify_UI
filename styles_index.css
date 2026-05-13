@@ -1305,6 +1305,38 @@ textarea,
   }
 }
 
+/* 小屏與平板文字最小 14px */
+@media (max-width: 899px) {
+  .header h1,
+  .sidebar-title,
+  .nav-item,
+  .nav-item .section-num,
+  .nav-item .section-title,
+  .section h2,
+  .article-text,
+  .article-text p,
+  .article-text li,
+  .explanation-box h3,
+  .explanation-box p,
+  .highlight-box li,
+  .case-study,
+  .play-btn,
+  .tab-btn,
+  .explanation-content,
+  .transcript {
+    font-size: 14px !important;
+  }
+
+  .section h2 {
+    font-size: 18px !important;
+  }
+
+  .tab-btn {
+    min-width: 90px !important;
+    padding: 8px 8px !important;
+  }
+}
+
 /* 強制說明區完整呈現，不要內部捲動 */
 @media (max-width: 1199px) {
   .content-area,
